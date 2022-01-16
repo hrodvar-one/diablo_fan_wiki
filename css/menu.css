@@ -1,0 +1,132 @@
+/* Navigation */
+
+.navigation ul {
+    /*padding-left: 0px; !*убираем левый отступ, равный 40px*!*/
+    text-align: center; /* текст по центру */
+    list-style: none;
+    margin:0;
+    padding:0;
+}
+
+.topmenu > li {
+    display: inline-block;
+    margin: 0;
+    padding: 0;
+    position:relative;
+}
+
+.topmenu li a {
+    display: block;
+    margin: 0;
+    padding: 12px 12px;
+    text-decoration: none;
+}
+
+/* === Разметка выпадающего подменю === */
+
+.submenu {
+    display: block;
+    position: absolute;
+    left: -3000px;
+    top: 100%;
+    z-index: 9999;  /* выпадающее меню будет перекрывать весь текст */
+}
+
+/* Добавление уголка вверху выпадающего меню */
+.submenu:before {
+    content: '';
+    display: block;
+    position: absolute;
+    top: -4px;
+    left: 0;
+    right: 0;
+    margin-left: auto;
+    margin-right: auto;
+    width: 0;
+    height: 0;
+    border-left: 10px solid transparent;
+    border-right: 10px solid transparent;
+    /*border-top: 10px solid #262626;*/
+    /*border-top: 10px solid #75d916;*/
+    border-bottom: 10px solid #3a3a3a;
+}
+
+.submenu:after {
+    content: '';
+    display: block;
+    position: absolute;
+    top: -2.5px;
+    left: 0;
+    right: 0;
+    margin-left: auto;
+    margin-right: auto;
+    width: 0;
+    height: 0;
+    border-left: 10px solid transparent;
+    border-right: 10px solid transparent;
+    /*border-top: 10px solid #262626;*/
+    /*border-top: 10px solid #75d916;*/
+    border-bottom: 10px solid #262626;
+}
+
+.submenu > ul {
+    border: 1px solid;
+    border-radius: 5px;  /* скругление углов */
+    margin-top: 5px;  /* отступ от основного меню */
+    padding: 10px 1px;
+    /*min-width: 120px;*/
+    opacity: 0;
+    /*transition: opacity .5s; !* анимация прозрачности *!*/
+}
+
+.submenu li a {
+    white-space: nowrap; /* если не очень длинные заголовки */
+    /*padding: 10px 20px;*/
+}
+
+.parent-submenu:hover .submenu {
+    /*left: -17.5px;  !* сдвиг выпадающего меню вправо *!*/
+    left: 0px;
+}
+
+.parent-submenu:hover .submenu ul {
+    opacity: 1;
+}
+
+/* Предотвращаем схлопывание */
+.navigation:after {
+    content: '';
+    display: table;
+    clear: both;
+}
+
+/* === Оформление меню === */
+.navigation {
+    background: black;
+}
+.navigation .topmenu > li > a {
+    color: #AFAFAF;
+}
+.navigation .topmenu > li > a:hover {
+    color: #AFAFAF;
+}
+.navigation .topmenu .active a{
+    box-shadow: inset 0 15px 15px rgba(0, 0, 0, 0.2);
+    color: #AFAFAF;
+    cursor: default;
+}
+
+/* === Оформление выпадающего подменю === */
+.navigation .submenu > ul {
+    background: #262626; /* цвет фона выпадающего меню */
+    border-color: #3a3a3a;
+}
+
+.navigation .submenu > ul > li > a {
+    color: #AFAFAF;
+}
+.navigation .submenu > ul > li > a:hover {
+    /*background: #7D0000;*/
+    background: #5d3006;
+    color: #f36f1f;
+}
