@@ -208,8 +208,16 @@ body {
     font-weight: bold;
 }
 
+.content-ul-li {
+    padding: 12px;
+}
+
 h2, h3 {
     text-align: center;
+}
+
+h2 {
+    color: white;
 }
 
 .p-header {
