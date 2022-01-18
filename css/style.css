@@ -239,7 +239,7 @@ body {
     font-style: italic;
 }
 
-/* Content ---> Table */
+/* Content ---> Table Sockets*/
 
 .content-table {
     text-align: -webkit-center;
@@ -252,6 +252,7 @@ body {
     width: 70%;
     background-color: #1c1c1c;
     border-collapse: collapse;
+    border: 2px solid #3a3939;
 }
 
 .content-table-sockets-th, .content-table-sockets-td {
@@ -278,6 +279,40 @@ body {
 }
 
 /* ---------------------- */
+/* Content ---> Table Runewords*/
+
+.content-table-chest-runewords {
+    text-align: -webkit-center;
+    display: block;
+    outline: none;
+    font-family: Exocet;
+    font-variant: small-caps;  /* Модифицирует все строчные символы как заглавные уменьшенного размера */
+}
+
+.content-table-td-exocet {
+    text-align: center;
+    color: #e5cc80;
+    border: 2px solid #3a3939;
+}
+
+.content-table-gray-span {
+    color: #797979;
+}
+
+.content-table-runewords-span {
+    color: #e5cc80;
+}
+
+.content-table-nonmagic-span {
+    color: white;
+}
+
+.content-table-magic-span {
+    color: #6969ff;
+}
+
+/* --------------------- */
+
 .content-ul-li {
     padding: 12px;
 }
