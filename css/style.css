@@ -198,6 +198,14 @@ body {
     color: #f36f1f;
 }
 
+.content-h3 {
+    color: white;
+    font-weight: 400;
+    font-size: 21px;
+    line-height: 1.1;
+    margin: 30px 0 19.92px;
+}
+
 .content p1 a {
     color: #f36f1f;
     text-decoration: none;
@@ -205,8 +213,109 @@ body {
 
 .p1-span {
     color: white;
-    font-weight: bold;
 }
+
+.p1-span-magic {
+    color: #9382c9
+}
+
+.p1-span-rare {
+    color: #fff468;
+}
+
+.p1-span-set {
+    color: #1eff00
+}
+
+.p1-span-unique {
+    color: #c69b6d;
+}
+
+.p1-span-rune {
+    color: #e5cc80;
+}
+
+.p1-span-italic {
+    font-style: italic;
+}
+
+/* Content ---> Table Sockets*/
+
+.content-table {
+    text-align: -webkit-center;
+    display: block;
+    outline: none;
+}
+
+.content-table-sockets {
+    margin: 30px 0;
+    width: 70%;
+    background-color: #1c1c1c;
+    border-collapse: collapse;
+    border: 2px solid #3a3939;
+}
+
+.content-table-sockets-th, .content-table-sockets-td {
+    border: 2px solid #3a3939;
+}
+
+.content-table-sockets-td {
+    text-align: center;
+    vertical-align: inherit;
+    padding: 10px 10px;
+}
+
+.content-table-sockets-thead {
+    background-color: #290000;
+}
+
+.content-table-sockets-th {
+    padding: 10px 10px;
+}
+
+.table-span-th {
+    color: white;
+    font-weight: 600;
+}
+
+/* ---------------------- */
+/* Content ---> Table Runewords*/
+
+.content-table-chest-runewords {
+    text-align: -webkit-center;
+    display: block;
+    outline: none;
+    font-family: Exocet;
+    font-variant: small-caps;  /* Модифицирует все строчные символы как заглавные уменьшенного размера */
+}
+
+.content-table-td-exocet {
+    text-align: center;
+    color: #e5cc80;
+    border: 2px solid #3a3939;
+}
+
+.content-table-gray-span {
+    color: #797979;
+}
+
+.content-table-runewords-span {
+    color: #e5cc80;
+}
+
+.content-table-nonmagic-span {
+    color: white;
+}
+
+.content-table-magic-span {
+    color: #6969ff;
+}
+
+.content-table-rare-span {
+    color: #ffff64;
+}
+
+/* --------------------- */
 
 .content-ul-li {
     padding: 12px;
